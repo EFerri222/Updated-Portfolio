@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Erik Ferri's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="main.js"></script>
+</head>
+<body style="background-color: black">
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary mb-3 fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" style="font-size: 36px;">Erik Ferri</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" style="color: white;">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html" style="color: white;">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html" style="color: white;">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" id="mainContent">
+
+        <div class="row">
+            <h1 class="mb-3" style="color: white;">About Me</h1>
+        </div>
+
+        <div class="row">
+            
+            <div class="col-md-4" style="padding-left: 0;">
+                <!-- SLIDER WITH CONTROLS -->
+                <div id="slider2" class="carousel slide mb-5" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="assets/images/profpic.jpg" alt="First Slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="assets/images/colombia.jpg" alt="Second Slide" style="height: 365px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="assets/images/mountvernon.jpg" alt="Third Slide" style="height: 365px; margin: 0 auto 0 auto;">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="assets/images/seinwave.jpg" alt="Third Slide" style="height: 365px; margin: 0 auto 0 auto;">
+                        </div>
+                    </div>
+        
+                    <!-- CONTROLS -->
+                    <a href="#slider2" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+        
+                    <a href="#slider2" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+                <div style="padding-left: 32.5px">
+                <audio src="assets/seinwave.mp3" controls></audio>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <p>Hello! My name is Erik. I really don't like to talk about myself, but I suppose this is the place to do it. I'm changing every day, so I will be a different person by the time you read this versus when I wrote this. I guess I can get into what I've been into lately and what I've been into my whole life.</p>
+
+                <p>I've always loved music and Star Wars. Lately, I feel like I haven't been playing as much music I should be but I know I will come back to it so that's not a big deal. I think it's important to have creative outlets in life, and music is definitely one of the best ones. I used to like to socialize a lot more, but these days I find myself enjoying quiet time, staying in, and I've become more selective about which social engagements I'm interested in.</p>
+        
+                <p>My goal is to become a full-stack web developer and launch a fulfilling career. I feel like challenging your brain is important to growth, and programming surely does that. There's always something to learn and it's always changing. Also, a lot of people don't realize how much creativity can go into programming. You can create whatever you want!</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script>
+    $('.carousel').carousel({
+      interval: 3000,
+      keyboard: true,
+      pause: 'hover',
+      wrap: true
+    });
+
+    $('#slider4').on('slide.bs.carousel', function () {
+      console.log('SLIDE!');
+    });
+
+    $('#slider4').on('slid.bs.carousel', function () {
+      console.log('SLID!');
+    });
+
+  </script>
+
+  <!-- Playing around with CSS animations. Uncomment line 107, lines 23-31 in main.css, and lines 34-40 in main.css to see animation -->
+  <!-- <img src="assets/images/seinwave.jpg" id="seinwave"> -->
+
+</body>
+</html>
