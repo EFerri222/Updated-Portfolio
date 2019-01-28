@@ -1,40 +1,30 @@
-nav {
-    height: 100px;
+body{
+    background-color: black;
+    color: rgba(255,255,255,0.8);
 }
 
-#mainContent {
-    margin-top: 150px;
-}
-
-body {
-    background-image: url("../images/background.jpeg");
+#landing{
+    height: 100vh;
+    background-image: url('../images/background.jpeg');
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
 }
 
-p {
-    color: white;
+#mainText{
+    margin-top: 30vh;
 }
 
-.card {
-    background-color: grey;
+#intro{
+    margin-top: 50px;
 }
 
-/* PLaying around with CSS animations. Uncomment lines 23-31, lines 34-40, and line 107 in index.html to see animation */
-/* #seinwave {
-    height: 200px;
-    width: 200px;
-    position: relative;
-    right: 200px;
-    animation-name: seinwave;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-} */
+#work{
+    background-color: rgb(61,61,61);
+}
 
-/* Playing around with CSS animations. Uncomment lines 23-31, lines 34-40, and line 107 in index.html to see animation */
-/* @keyframes seinwave {
-    0% {left:0px; bottom:0px;}
-    25% {left:200px; bottom:0px;}
-    50% {left:200px; bottom: 200px;}
-    75% {left:0px; bottom:200px;}
-    100% {left:0px; bottom:0px;}
-} */
+#p1{
+    height: 350px;
+}
